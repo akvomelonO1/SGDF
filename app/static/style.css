@@ -1,0 +1,85 @@
+*{
+    -webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(scott-webb-VxRVVU8d9KY-unsplash.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  display: table;
+}
+
+.signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(0, 0, 0, 0.308);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  padding: 3em;
+}
+.signin:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.767);
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  color: whitesmoke;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+}
+input {
+  display: block;
+  width: 400px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 7px;
+  color: whitesmoke;
+}
+input:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.btn {
+  width: 400px;
+  height: 70px;
+  font-size: 17px;
+  background: #000;
+  color: rgba(245, 245, 245, 0.918);
+  border: 0;
+  font-weight: lighter;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  
+}
+.btn:hover {
+  font-size: 19px;
+}
+.msg{
+  color:whitesmoke;
+  margin: 4px;
+  padding-bottom: 6px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
