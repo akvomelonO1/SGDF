@@ -29,3 +29,7 @@ Se comprobará su funcionamiento mediante la descarga y ejecución del archivo "
 En caso de necesitar librerías de terceros, se adjuntaran en un fichero "requirements.txt" para poder ser descargadas con pip.
 
 Si se requieren paquetes adicionales a instalar en el sistema operativo, se indicaran en un fichero "leeme.txt".
+
+
+## DB INFO
+    g is a special object that is unique for each request. It is used to store data that might be accessed by multiple functions during the request. The connection is stored and reused instead of creating a new connection if get_db is called a second time in the same request.
