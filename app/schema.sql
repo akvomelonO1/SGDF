@@ -1,16 +1,6 @@
-DROP TABLE IF EXISTS usuarios;
-DROP TABLE IF EXISTS post;
-
-CREATE TABLE usuarios (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  username TEXT UNIQUE NOT NULL,
-  password TEXT NOT NULL
-);
-
-CREATE TABLE post (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  author_id INTEGER NOT NULL,
-  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  file TEXT
-  FOREIGN KEY (author_id) REFERENCES user (id)
+drop table if exists users;
+create table users(
+    ID INTEGER PRIMARY KEY autoincrement,
+    title text not null,
+    'text' text not null
 );
