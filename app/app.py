@@ -19,7 +19,7 @@ app.config.from_object(__name__)
 app.config.update(dict(DATABASE=os.path.join(app.root_path, 'SGDF.db'),
                        SECRET_KEY='impossible key',# podemos crearla con random o algun otro metodo
                        USERNAME='root',
-                       PASSWORD=''))
+                       PASSWORD='root'))
 app.config.from_envvar('SDGF_SETTINGS',silent=True)
 # Definimos una var de entorno SDGF_SETTINGS que apunta a un fichero de config que cargará la info. (silent = True, unicamenete le indica a Flask que no pete si no hay un entorno configurado )
 # Deberíamos instanciar la BD en otra carpeta, en vez de aquí, pero por el momento ...
