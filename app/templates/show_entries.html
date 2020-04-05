@@ -3,7 +3,8 @@
   {% if session.logged_in %}
   {% if error %}
 <p class="error"> <strong>Error:</strong> {{ error }}{% endif %}</p>
-  <h2>Subir archivos</h2>
+<h2><strong>Uploads</strong> Page</h2>
+  <h4>Subir archivos ⇧ </h4>
   <div class="form-container">
     <form method="post" action="{{ url_for('add_entry') }}">
       
@@ -18,7 +19,7 @@
   {% endif %}
   
   <ul class=history>
-    <h2>Historial de subidas</h2>
+    <h2>File <strong>history</strong></h2>
   {% for user in users %}
     <li><h3>{{ user.title }}</h3>{{ user.text|safe }}
   {% else %}

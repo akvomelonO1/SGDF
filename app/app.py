@@ -64,14 +64,15 @@ def login():
             error = 'Invalid password'
         else:
             session['logged_in'] = True
-            flash('You were logged in')
+            userinfo = app.config['USERNAME']
+            flash('Welcome, you are LOGGED IN 🥳')
             return redirect(url_for('show_entries'))
     return render_template('login.html', error=error)
 
 @app.route('/logout')
 def logout():
     session.pop('logged_in', None)
-    flash('You were logged out')
+    flash('Bye, you are LOGGED OUT 😩')
     return redirect(url_for('login'))
 
 @app.route('/show_entries')
